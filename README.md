@@ -90,9 +90,9 @@ The output is:
 
 ## Third Pattern
 
-Now we will print `A B C D E`. We will start with the previous code and will be using the  [[ASCII Table|ASCII]] table to print the characters.
+Now we will print `A B C D E`. We will start with the previous code and will be using the  ASCII table to print the characters.
 
-The starting character is `A` which is equivalent to `65` is the ASCII table so we can use that value and add one to itself in each iteration of the nested loop. We have to create a variable, in this case `int text = 65;`. Then we have to [[Casting|cast]] that value to a `char`. The variable is created in the outside loop to it resets after each line.
+The starting character is `A` which is equivalent to `65` is the ASCII table so we can use that value and add one to itself in each iteration of the nested loop. We have to create a variable, in this case `int text = 65;`. Then we have to cast that value to a `char`. The variable is created in the outside loop to it resets after each line.
 
 ```c++
 #include <iostream>
@@ -126,7 +126,7 @@ A B C D E
 
 ## Fourth Pattern
 
-This is a variation of the [[Implementing Patterns#First Pattern|First Pattern]] but the numbers are going the other way around, going from five to one. We do this by starting the nested `for` with a value of 5 and decreasing it each iteration.
+This is a variation of the First Pattern but the numbers are going the other way around, going from five to one. We do this by starting the nested `for` with a value of 5 and decreasing it each iteration.
 
 ```c++
 #include <iostream>
@@ -158,7 +158,7 @@ The output is:
 
 ## Fifth Pattern
 
-The next one is a variation of the [[Implementing Patterns#Second Pattern|Second Pattern]]. Following the same structure, we will make the same change as the previous one, instead of printing `i` we will print `j`.
+The next one is a variation of the Second Pattern. Following the same structure, we will make the same change as the previous one, instead of printing `i` we will print `j`.
 
 ```c++
 #include <iostream>
@@ -192,7 +192,7 @@ The output is:
 
 ## Sixth Pattern
 
-We will start with the [[Implementing Patterns#First Pattern|First Pattern]] and modify it to make it a pyramid. It should start with 1 in the first line, 12 in the second and so on. Modify the `cout` at the end to include `cout << " " << endl;`.
+We will start with the First Pattern and modify it to make it a pyramid. It should start with 1 in the first line, 12 in the second and so on. Modify the `cout` at the end to include `cout << " " << endl;`.
 
 ```c++
 #include <iostream>
@@ -224,7 +224,7 @@ The output is:
 
 ## Seventh Pattern
 
-The same approach will be used in the [[Implementing Patterns#Second Pattern|Second Pattern]].
+The same approach will be used in the Second Pattern.
 
 ```c++
 #include <iostream>
@@ -256,7 +256,7 @@ The output is:
 
 ## Eighth Pattern
 
-This is a variation of the [[Implementing Patterns#Third Pattern|Third Pattern]] using the same concept of constraining `i` to `j`.
+This is a variation of the Third Pattern using the same concept of constraining `i` to `j`.
 
 ```c++
 #include <iostream>
@@ -328,7 +328,7 @@ The output is:
 
 ## Tenth Pattern
 
-The first pattern where will be using symbols. This is build on the base of the [[Implementing Patterns#Sixth Pattern|Sixth Pattern]].
+The first pattern where will be using symbols. This is build on the base of the Sixth Pattern.
 
 ```c++
 #include <iostream>
@@ -452,7 +452,7 @@ To remove the line repeating in the middle we can change the value of `i` in the
 
 This is a more complex pattern.
 
-First we can write it like the [[Implementing Patterns#First Pattern|First Pattern]] replacing `i` for `*`. Because we don't want to display all of them, just only the border, we can use a `if` to create a condition of which dots will be shown. In case the condition is not met, a space `" "` will be used. A space in front of `*` is used to space out and make a perfect square, a double space `"  "` will be used.
+First we can write it like the First Pattern replacing `i` for `*`. Because we don't want to display all of them, just only the border, we can use a `if` to create a condition of which dots will be shown. In case the condition is not met, a space `" "` will be used. A space in front of `*` is used to space out and make a perfect square, a double space `"  "` will be used.
 
 ```c++
 #include <iostream>
@@ -538,7 +538,7 @@ And the output is:
 
 ## Fourteenth Pattern
 
-To print a full pyramid, so a triangle on both sides. We will use the [[Implementing Patterns#Tenth Pattern|Tenth Pattern]] as a base, because we only need to create two more `for` loops, one for the spaces of the left side and another one for the dots on the right side.
+To print a full pyramid, so a triangle on both sides. We will use the Tenth Pattern as a base, because we only need to create two more `for` loops, one for the spaces of the left side and another one for the dots on the right side.
 
 The left side which is the spaces is going from 5 to 1, so it would make a inverted pyramid, we can invert the first loop like `for (int i = 5; i  = j; i--)` where we are decreasing the value of `i` from five to the minimum value that is greater than `j`. 
 
